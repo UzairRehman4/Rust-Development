@@ -20,41 +20,17 @@ fn main() {
         );
     }
 
-    println!("The value of x is: {x}");
-    main1();
-    main2();
-    main3();
-}
-// Example 1: Basic Shadowing
-fn main1() {
-    let x = 5;
-    println!("The value of x is: {}", x);
+    let _apple = 10;
 
-    let x = x + 1;
-    println!("The value of x is: {}", x);
+    let _apple = 20;
 
-    let x = x * 2;
-    println!("The value of x is: {}", x);
-}
+    println!("apples {}", _apple);
 
-// Example 2: Shadowing with Different Types
-fn main2() {
-    let spaces = "   ";
-    println!("Spaces: '{}'", spaces);
+    let _daredevil = "Mathew";
+    let _daredevil = "Born again";
 
-    let spaces = spaces.len();
-    println!("Number of spaces: {}", spaces);
-}
+    let _daredevil = _daredevil;
+    // _daredevil = "20";
 
-// Example 3: Shadowing in Different Scopes
-fn main3() {
-    let x = 10;
-    println!("x in outer scope: {}", x);
-
-    {
-        let x = "inner";
-        println!("x in inner scope: {}", x);
-    }
-
-    println!("x in outer scope: {}", x);
+    println!("daredevil {}", _daredevil);
 }
