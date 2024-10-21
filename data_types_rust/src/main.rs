@@ -68,8 +68,7 @@ fn main() {
 
     println!("five_hundred = {five_hundred} six_point_four = {six_point_four} one = {one}");
 
-    let tupl = ();
-    println!("tuple = {tupl}");
+    // let tupl = ();
 
     let a = [3; 5];
     println!("a = {a:?}");
