@@ -1,32 +1,16 @@
 fn main() {
-    // let y = is_even(4);
-    // println!("value of y is {y:?}");
-
-    // if y {
-    //     println!("Fn returned true");
+    // let arr = [1, 2, 83, 14, 59];
+    // let mut index = 0;
+    // while index < 9 {
+    //     println!("i: {} and v: {}", index, arr[index]);
+    //     index += 1;
     // }
-    // let calling = is_even(6);
-    // println!("calling fun value is {calling:?}");
 
-    // looping
-
-    let mut num = 1;
-
-    loop {
-        println!("looping bro {num:?}");
-
-        if num == 10 {
-            break;
-        }
-
-        num = num + num;
+    // for loop
+    // for x in arr {
+    //     println!("x = {x}");
+    // }
+    for x in (1..=10).rev() {
+        println!("x : {x}");
     }
 }
-
-// fn is_even(x: i32) -> bool {
-//     if x % 2 == 0 {
-//         return true;
-//     } else {
-//         false
-//     }
-// }
