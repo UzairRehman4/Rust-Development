@@ -1,4 +1,5 @@
 const GLOBAL_NUMBER: u32 = 100;
+const ARRAY_VALUES: [i32; 4] = [1, 2, 3, 45];
 
 fn main() {
     // println!("Hello, world!");
@@ -8,7 +9,7 @@ fn main() {
 
     // const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3 + PI + GLOBAL_NUMBER;
     // println!("Three Hours In Seconds {}", THREE_HOURS_IN_SECONDS);
-
+    println!("ARRAY value are here :{:?}", ARRAY_VALUES);
     let x = 5;
 
     let x = x + 1;
@@ -33,4 +34,11 @@ fn main() {
     // _daredevil = "20";
 
     println!("daredevil {}", _daredevil);
+
+    test_func();
+}
+
+fn test_func() {
+    let x = ();
+    println!("{:?}", x);
 }
