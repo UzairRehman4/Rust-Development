@@ -2,6 +2,11 @@ const GLOBAL_NUMBER: u32 = 100;
 const ARRAY_VALUES: [i32; 4] = [1, 2, 3, 45];
 
 fn main() {
+    let mut _values = 10;
+    _values = 20;
+
+    let avalue = 20;
+    let avalue = true;
     // println!("Hello, world!");
 
     // const PI: u32 = 10;

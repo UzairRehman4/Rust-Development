@@ -1,0 +1,51 @@
+{
+  "chain": [
+    {
+      "timestamp": 1734809253,
+      "transactions": [],
+      "previous_hash": "0",
+      "nonce": 0,
+      "hash": "a742c3b713ccef45e73baeb3ee30b43555a1c15ee4697feaaace838db05588b1"
+    },
+    {
+      "timestamp": 1734810423,
+      "transactions": [
+        {
+          "sender": "uzair",
+          "receiver": "Rust",
+          "amount": 10
+        }
+      ],
+      "previous_hash": "a742c3b713ccef45e73baeb3ee30b43555a1c15ee4697feaaace838db05588b1",
+      "nonce": 693,
+      "hash": "00376a2ad3b046b98791d67f054b2fe69d135129eb3cbde40cf5ee435578a58b"
+    },
+    {
+      "timestamp": 1734810443,
+      "transactions": [
+        {
+          "sender": "uzair",
+          "receiver": "Rust",
+          "amount": 10
+        }
+      ],
+      "previous_hash": "00376a2ad3b046b98791d67f054b2fe69d135129eb3cbde40cf5ee435578a58b",
+      "nonce": 282,
+      "hash": "00a72b410825e68ddaf77460f2def27713339a25b61dd8d9736d74e667a992a0"
+    },
+    {
+      "timestamp": 1734810498,
+      "transactions": [
+        {
+          "sender": "solana",
+          "receiver": "220$",
+          "amount": 10
+        }
+      ],
+      "previous_hash": "00a72b410825e68ddaf77460f2def27713339a25b61dd8d9736d74e667a992a0",
+      "nonce": 338,
+      "hash": "00842612d72cff9c7058703708bc225c16962542915b01a5ce55f8bc5c5d2fa8"
+    }
+  ],
+  "difficulty": 2
+}
