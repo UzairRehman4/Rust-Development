@@ -9,4 +9,9 @@ fn main() {
 
     x = 20;
     println!("x = {x}, y = {y}");
+
+    let v = vec![1, 2, 3];
+
+    let v2 = v;
+    println!("v2", { v2 });
 }
