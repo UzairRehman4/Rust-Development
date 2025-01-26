@@ -1,17 +1,34 @@
+pub mod helpers;
+
 fn main() {
-    // let mut s = String::from("Hello");
+    let s = String::from("Uzair");
+    let (s, len) = calculate_len(s);
+    println!("The length of '{s}' is {len}");
 
-    // s.push_str(" Uzair");
+    let (first, last) = ("Uzair", "Rehman");
+    let result = helpers::namehelpers::get_full_name(first, last);
+    println!("Full name: {result}");
 
-    // println!("S = {s}");
-    let mut x = 10;
-    let y = x;
+    test_if();
+}
 
-    x = 20;
-    println!("x = {x}, y = {y}");
+fn calculate_len(s: String) -> (String, usize) {
+    let result = s.len();
+    (s, result)
+}
 
-    let v = vec![1, 2, 3];
+fn test_if() {
+    let age_to_drive = 16u8;
 
-    let v2 = v;
-    println!("v2", { v2 });
+    println!("Enter the person's age: ");
+    let mut myinput = String::new();
+    std::io::stdin().read_line(&mut myinput).unwrap();
+
+    let age = myinput.trim().parse::<u8>().unwrap_or(0);
+
+    if age >= age_to_drive {
+        println!("You can drive!");
+    } else {
+        println!("Wait for a license.");
+    }
 }
