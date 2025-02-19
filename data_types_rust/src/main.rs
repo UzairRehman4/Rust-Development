@@ -70,6 +70,24 @@ fn main() {
 
     // let tupl = ();
 
-    let a = [3; 5];
+    let a: [i32; 5] = [3; 5];
     println!("a = {a:?}");
+    let f: u8 = match test().checked_add(10) {
+        Some(num) => num,
+        None => {
+            print!("Connot Add");
+            return;
+        }
+    };
+    println!("the value of f is {}", f);
+    testing();
+}
+
+fn test() -> u8 {
+    200
+}
+
+fn testing() {
+    let x = (2, 3.3, 'u');
+    println!("x values are {} and {}", x.1, x.2);
 }
