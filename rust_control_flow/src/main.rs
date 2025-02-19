@@ -1,4 +1,33 @@
 fn main() {
+<<<<<<< HEAD
+    // let mut count = 0;
+    // 'counting_up: loop {
+    //     println!("count = {count}");
+    //     let mut remaining = 10;
+
+    //     loop {
+    //         println!("remaining = {remaining}");
+    //         if remaining == 9 {
+    //             break;
+    //         }
+    //         if count == 2 {
+    //             break 'counting_up;
+    //         }
+    //         remaining -= 1;
+    //     }
+
+    //     count += 1;
+    // }
+    // println!("End count = {count}");
+    control_flow();
+}
+
+fn control_flow() {
+    let num = [5; 6];
+
+    for i in num {
+        print!("the value of num is {i}");
+=======
     // let mut num: u8 = 1;
 
     // let _result = 'my_loop: loop {
@@ -51,5 +80,6 @@ fn for_loop() {
     for x in arr.iter_mut() {
         *x *= *x; // Multiply the value by itself
         println!("x = {}", x);
+>>>>>>> main
     }
 }
